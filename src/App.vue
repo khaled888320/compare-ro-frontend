@@ -1,27 +1,32 @@
 <template>
   <div class="app">
 
-    <!-- HEADER -->
     <header>
       <div class="header-inner">
         <div class="logo">
           <div class="logo-icon">📦</div>
           <span>Compare</span>Ro
         </div>
-        <nav>
-          <RouterLink to="/">📦 Curierat</RouterLink>
-          <RouterLink to="/transport">🚗 Transport</RouterLink>
-          <RouterLink to="/food">🍕 Mâncare</RouterLink>
+
+        <nav :class="{ open: menuOpen }">
+          <RouterLink to="/" @click="menuOpen = false">📦 Curierat</RouterLink>
+          <RouterLink to="/transport" @click="menuOpen = false">🚗 Transport</RouterLink>
+          <RouterLink to="/food" @click="menuOpen = false">🍕 Mâncare</RouterLink>
         </nav>
+
+        <button class="hamburger" :class="{ open: menuOpen }" @click="menuOpen = !menuOpen">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
       </div>
     </header>
 
-    <!-- MAIN -->
     <main>
       <RouterView />
     </main>
 
-    <!-- FOOTER -->
     <footer>
       <p>© 2026 CompareRo — Compară și economisește!</p>
     </footer>

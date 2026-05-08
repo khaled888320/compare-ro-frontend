@@ -118,7 +118,7 @@
     line-height: 1.2;
   }
   
-  .hero h1 span { color: #6366f1; }
+  .hero h1 span { color: #fde68a !important; }
   
   .hero p {
     color: #64748b;

@@ -132,7 +132,8 @@ main {
 
 .hero p {
   font-size: 16px;
-  opacity: 0.9;
+  color: white !important;
+  opacity: 1 !important;
   position: relative;
   z-index: 1;
 }

@@ -12,13 +12,60 @@
         <div class="form-group">
           <label>Orașul tău</label>
           <select v-model="city" class="text-input">
-            <option value="">Selectează orașul</option>
-            <option value="bucuresti">București</option>
-            <option value="cluj">Cluj-Napoca</option>
-            <option value="timisoara">Timișoara</option>
-            <option value="iasi">Iași</option>
-            <option value="brasov">Brașov</option>
-          </select>
+  <option value="">Selectează orașul</option>
+  <optgroup label="Moldova">
+    <option value="iasi">Iași</option>
+    <option value="bacau">Bacău</option>
+    <option value="suceava">Suceava</option>
+    <option value="piatra-neamt">Piatra Neamț</option>
+    <option value="botosani">Botoșani</option>
+    <option value="vaslui">Vaslui</option>
+    <option value="focsani">Focșani</option>
+    <option value="galati">Galați</option>
+    <option value="braila">Brăila</option>
+  </optgroup>
+  <optgroup label="Transilvania">
+    <option value="cluj">Cluj-Napoca</option>
+    <option value="brasov">Brașov</option>
+    <option value="sibiu">Sibiu</option>
+    <option value="targu-mures">Târgu Mureș</option>
+    <option value="oradea">Oradea</option>
+    <option value="alba-iulia">Alba Iulia</option>
+    <option value="bistrita">Bistrița</option>
+    <option value="sfantu-gheorghe">Sfântu Gheorghe</option>
+    <option value="miercurea-ciuc">Miercurea Ciuc</option>
+    <option value="deva">Deva</option>
+    <option value="zalau">Zalău</option>
+  </optgroup>
+  <optgroup label="Muntenia & București">
+    <option value="bucuresti">București</option>
+    <option value="ploiesti">Ploiești</option>
+    <option value="pitesti">Pitești</option>
+    <option value="targoviste">Târgoviște</option>
+    <option value="alexandria">Alexandria</option>
+    <option value="giurgiu">Giurgiu</option>
+    <option value="calarasi">Călărași</option>
+    <option value="slobozia">Slobozia</option>
+  </optgroup>
+  <optgroup label="Oltenia">
+    <option value="craiova">Craiova</option>
+    <option value="ramnicu-valcea">Râmnicu Vâlcea</option>
+    <option value="targu-jiu">Târgu Jiu</option>
+    <option value="drobeta-turnu-severin">Drobeta-Turnu Severin</option>
+    <option value="slatina">Slatina</option>
+    <option value="alexandria">Alexandria</option>
+  </optgroup>
+  <optgroup label="Banat & Vest">
+    <option value="timisoara">Timișoara</option>
+    <option value="arad">Arad</option>
+    <option value="resita">Reșița</option>
+    <option value="deva">Deva</option>
+  </optgroup>
+  <optgroup label="Dobrogea">
+    <option value="constanta">Constanța</option>
+    <option value="tulcea">Tulcea</option>
+  </optgroup>
+</select>
         </div>
   
         <div class="form-group">
